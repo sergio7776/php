@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    //Ejercicos Diapositiva 60
+    //Ejercicio 1
+    function potencia(num1, num2) {
+        return Math.pow(num1, num2);
+    }
+    potencia(3, 2);
+
+    //Ejercicio 2
+    var cuadrado = function (num) {
+        return num * num;
+    };
+    cuadrado(4);
+
+    //Ejercicio 3
+    var numero = 0;
+    function asignacion(valor) {
+        numero = valor;
+    }
+    asignacion(5);
+    console.log(numero);
+
+    //Ejercicio 4
+    function miSandwich(ing1, ing2, func){
+        console.log("Estoy comiendo un sandwich de" + ing1 + "y" + ing2) 
+        func();   
+    }
+    function termineDeComer(){
+        console.log("Termine de comer mi sandwich")
+    }
+    miSandwich("jamon", "queso", termineDeComer);
+
+</script>
+
+<body>
+    
+</body>
+</html>

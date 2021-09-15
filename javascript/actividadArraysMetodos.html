@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    //Ejercicios Diapositiva 75
+    //Ejercicio 1
+    const arr = [2, 6, 7, 14, 21, 24];
+
+    arr.foreach(function (value){
+        if (value % 7 == 0) {
+            document.write("<h3> + value + "es multiplo de 7 </h3>");
+        }
+    
+    });
+    //Ejercicio 2
+    function imprimirListado(arr) {
+        arr.foreach(function (value){
+            document.write(value)
+        });
+    }
+    imprimirListado(arr);
+
+    //Ejercicio 3
+    var aValores = [1, 220, 41, 12, 7, 70, 0, 17, 49];
+    aMultiplos = aValores.filter(function (value){
+        return (value % 7 = 0);
+    });
+    imprimirListado(aMultiplos);
+    
+    //Ejercicio 4
+    var aValores = [2, 4, 5, 6, 5, 7];
+    aRaiz = aValores.map(function (valor){
+        return Match.sqrt(valor);
+    });
+    imprimirListado(aRaiz);
+
+</script>
+
+<body>
+    
+</body>
+</html>
