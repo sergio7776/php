@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+</head>
+
+<script>
+    var productos = [
+        ["yerba", 200],
+        ["Azúcar", 50],
+        ["Tallarines", 80],
+        ["Leches", 40],
+    ];
+
+    function actualizarPrecios(aValores, porcentaje) {
+        return aValores.map(function (valor) {
+            return [valor[0], valor[1] * ((porcentaje / 100) + 1)];
+        }
+        );
+    }
+
+    function imprimirProductos(aArticulos) {
+        document.write(`
+        <div class="container">
+            <h1>Listado de Productos</h1>
+            <table class="table">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            `);
+        aArticulos.foreach(function (valor, indice) {
+            document.write(`
+                <tr>
+                    <td>${valor[0]}</td>
+                    <td>${valor[1]}</td>
+                </tr>`)
+
+        })
+        document.write(`    
+            </table>
+        </div>        
+        `)
+    };
+
+var aAumentos = actualizarPrecios(articulos, 10);
+imprimirProductos(aAumentos);
+
+</script>
+
+<body>
+
+</body>
+
+</html>
